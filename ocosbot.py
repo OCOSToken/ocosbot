@@ -14,7 +14,7 @@ Always respond positively and helpfully in the same language as the user.
 User message: {user_text}
 """
     response = openai.ChatCompletion.create(
-        model="gpt-4-turbo",
+        model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}]
     )
     answer = response['choices'][0]['message']['content']
